@@ -1,0 +1,85 @@
+[{
+        "id": "1",
+        "title": "PINK ORCHID PHALENOPSIS",
+        "image": "pink-orchid.jpg",
+        "description": "Pink phalenopsis orchid (80cm)",
+        "price": 30
+    },
+    {
+        "id": "2",
+        "title": "WHITE ORCHID PHALENOPSIS",
+        "image": "white-orhid.jpg",
+        "description": "WHITE ORCHID PHALENOPSIS",
+        "price": 25
+    },
+    {
+        "id": "3",
+        "title": "PURPLE ORCHID PHALENOPSIS",
+        "image": "purple-orchid.jpg",
+        "description": "Purple phalenopsis orchid (80cm)",
+        "price": 35
+    },
+    {
+        "id": "4",
+        "title": "YELLOW ORCHID PHALENOPSIS",
+        "image": "yellow-orchid.jpg",
+        "description": "Yellow phalenopsis orchid (80cm)",
+        "price": 40
+    },
+    {
+        "id": "5",
+        "title": "YELLOW ONCHIDIUM ORCHID",
+        "image": "small-yellow-orchid.jpg",
+        "description": "Yellow onchidium orchid (70cm)",
+        "price": 60
+    },
+    {
+        "id": "6",
+        "title": "EXCLUSIVE ORCHID TERRARIUM",
+        "image": "orchid-terrarium.jpg",
+        "description": "3 Phalenopsis orchid with some grass",
+        "price": 250
+    },
+    {
+        "id": "7",
+        "title": "3 COLOR DENROBIUM ORCHIDS",
+        "image": "orchid-3color.jpg",
+        "description": "3 colour dendrobium (70cm) (easy to care)",
+        "price": 180
+    },
+    {
+        "id": "8",
+        "title": "WHITE DENDROBIUM ORCHID",
+        "image": "white-dendrobium.jpg",
+        "description": "White dendrobium orchid (60cm)",
+        "price": 58
+    },
+    {
+        "id": "9",
+        "title": "RED ORCHID PHALENOPSIS      ",
+        "image": "small-red-orchid.jpg",
+        "description": "Red phalenopsis orchid (60cm)",
+        "price": 40
+    },
+    {
+        "id": "10",
+        "title": "BLUE ORCHID PHALENOPSIS",
+        "image": "blue-orchid.jpg",
+        "description": "Blue phalenopsis orchid (90cm)",
+        "price": 90
+    },
+    {
+        "id": "11",
+        "title": "AWESOME PURPLE ORCHID      ",
+        "image": "purple-blue-orchid.jpg",
+        "description": "Purple phalenopsis orchid (90cm)",
+        "price": 95
+    },
+    {
+        "id": "12",
+        "title": "ORANGE ORCHID PHALENOPSIS",
+        "image": "orange-orchid.jpg",
+        "description": "Orange phalenopsis orchid (70cm)",
+        "price": 46
+    }
+]
