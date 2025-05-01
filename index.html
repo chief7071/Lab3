@@ -173,52 +173,75 @@
   </div>
 </div>
 
-  <!-- Modal contacts -->
-  <div class="modal fade bd-example-modal-lg" id="cont" tabindex="-1" role="dialog" aria-labelledby="modal-contacts" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Our Phones:<br> +380739273743<br> +380979273743<br> +380989273744<br> Our Email:<br> kxmb382@gmail.com<br> chief7777@gmail.com<br> flower-professional@ukr.net</h5>
-          <h5>Address: Ukraine, Kyiv<br> str. Heroiv Oborony St, 15</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <h1>Incredible Orchids Shop Address</h1>
-          <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-          <div style="overflow:hidden;height:525px;width:795px;">
-            <div id="gmap_canvas" style="height:525px;width:795px;"></div>
+  <!-- Modal contacts-->
+<div class="modal fade bd-example-modal-lg" id="cont" tabindex="-1" role="dialog" aria-labelledby="modal-contacts" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-contacts">
+          Our Phones:<br>
+          +380739273743<br>
+          +380979273743<br>
+          +380989273744<br>
+          Our Email:<br>
+          kxmb382@gmail.com<br>
+          chief7777@gmail.com<br>
+          flower-professional@ukr.net
+        </h5>
+        <h5>Address: Ukraine, Kyiv<br>str. Heroiv Oborony St, 15</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <h1>Incredible Orchids Shop Address</h1>
+      </div>
+
+      <div>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <div style="overflow:hidden;height:525px;width:795px;">
+          <div id="gmap_canvas" style="height:525px;width:795px;"></div>
+          <div>
+            <small>
+              <a href="https://embedgooglemaps.com/de/">https://embedgooglemaps.com/de/</a>
+            </small>
+            <div>
+              <div>
+                <script>
+                  function init_map() {
+                    var myOptions = {
+                      zoom: 11,
+                      center: new google.maps.LatLng(49.839683, 24.029717000000005),
+                      mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+                    map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+                    marker = new google.maps.Marker({
+                      map: map,
+                      position: new google.maps.LatLng(49.839683, 24.029717000000005)
+                    });
+                    infowindow = new google.maps.InfoWindow({
+                      content: '<strong>Incedible-shop</strong><br>Lviv<br>'
+                    });
+                    google.maps.event.addListener(marker, "click", function() {
+                      infowindow.open(map, marker);
+                    });
+                    infowindow.open(map, marker);
+                  }
+                  google.maps.event.addDomListener(window, "load", init_map);
+                </script>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
           </div>
-          <script>
-            function init_map() {
-              var myOptions = {
-                zoom: 11,
-                center: new google.maps.LatLng(49.839683, 24.029717000000005),
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-              };
-              var map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
-              var marker = new google.maps.Marker({
-                map: map,
-                position: new google.maps.LatLng(49.839683, 24.029717000000005)
-              });
-              var infowindow = new google.maps.InfoWindow({
-                content: "<strong>Incredible-shop</strong><br>Lviv<br>"
-              });
-              google.maps.event.addListener(marker, "click", function () {
-                infowindow.open(map, marker);
-              });
-              infowindow.open(map, marker);
-            }
-            google.maps.event.addDomListener(window, "load", init_map);
-          </script>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
+
     </div>
   </div>
+</div>
 
   <!-- Modal care -->
   <div class="modal fade bd-example-modal-lg" id="care" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
